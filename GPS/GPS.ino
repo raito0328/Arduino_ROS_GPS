@@ -13,7 +13,7 @@ std_msgs::Float32MultiArray msg;
 ros::Publisher pub("gnss", &msg);
 
 void smartDelay(unsigned long ms);
-SoftwareSerial gps(10, 11); //GPS のシリアル通信ポートの割り当て RX2 番ピン，TX3 番ピン
+SoftwareSerial gps(10, 11); //GPS のシリアル通信ポートの割り当て RX11 番ピン，TX10 番ピン
 TinyGPSPlus tinyGPS;
 void setup(){
   nh.initNode();
